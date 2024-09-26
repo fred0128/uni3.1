@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="count" id="count">0</div>
+        <div class="btnbox">
+            <button onclick="add1()" id="mybtn1" class="add">+1</button>
+            <button onclick="add10()" id="mybtn10" class="add">+10</button>
+            <button onclick="add100()" id="mybtn100" class="add">+100</button>
+        </div>
+    </div>
+
+    <script>
+        let countElement = document.getElementById('count');
+        let r = 0;
+
+        function add1() {
+            r = r + 1;
+            countElement.innerHTML = r;
+        }
+        function add10() {
+            r = r + 10;
+            countElement.innerHTML = r;
+        }
+        function add100() {
+            r = r + 100;
+            countElement.innerHTML = r;
+        }
+    </script>
+</body>
+
+</html>
